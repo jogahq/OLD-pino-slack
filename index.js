@@ -8,8 +8,7 @@ const { APP, SLACK_CHANNEL, SLACK_TOKEN } = process.env
 
 const web = new WebClient(SLACK_TOKEN)
 
-const send = (text) =>
-  web.chat.postMessage({ channel: SLACK_CHANNEL, text: msg })
+const send = (text) => web.chat.postMessage({ channel: SLACK_CHANNEL, text })
 
 // Pipe everything to stdout
 process.stdin.pipe(process.stdout)
