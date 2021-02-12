@@ -4,11 +4,12 @@ const readline = require('readline')
 const R = require('ramda')
 const { WebClient } = require('@slack/client')
 
-const { APP, CHANNEL, SLACK_TOKEN } = process.env
+const { APP, SLACK_CHANNEL, SLACK_TOKEN } = process.env
 
 const web = new WebClient(SLACK_TOKEN)
 
-const send = (text) => web.chat.postMessage({ channel: CHANNEL, text: msg })
+const send = (text) =>
+  web.chat.postMessage({ channel: SLACK_CHANNEL, text: msg })
 
 // Pipe everything to stdout
 process.stdin.pipe(process.stdout)
