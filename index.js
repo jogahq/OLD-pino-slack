@@ -27,7 +27,7 @@ rl.on('line', (line) => {
       send(
         [
           `Something went wrong with ${APP}`,
-          tripleBackTick(parsed.msg),
+          parsed.msg !== '' ? tripleBackTick(parsed.msg) : '',
           tripleBackTick(JSON.stringify(R.omit(['msg'], parsed), null, 2)),
         ].join('\n')
       )
