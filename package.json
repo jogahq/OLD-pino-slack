@@ -1,6 +1,6 @@
 {
   "name": "pino-slack",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Read from stdin and send errors to slack",
   "main": "index.js",
   "bin": {
