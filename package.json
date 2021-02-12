@@ -1,0 +1,19 @@
+{
+  "name": "pino-slack",
+  "version": "0.0.0",
+  "description": "Read from stdin and send errors to slack",
+  "main": "index.js",
+  "bin": {
+    "pino-slack": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^5.0.2",
+    "ramda": "^0.27.1"
+  }
+}
