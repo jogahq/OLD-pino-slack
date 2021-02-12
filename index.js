@@ -18,7 +18,7 @@ const rl = readline.createInterface({
   terminal: false,
 })
 
-const tripleBackTick = (msg: string) => ['```', msg, '```'].join('')
+const tripleBackTick = (msg) => ['```', msg, '```'].join('')
 
 rl.on('line', (line) => {
   try {
