@@ -32,7 +32,7 @@ rl.on('line', (line) => {
         ].join('\n')
       )
     } else if (parsed.level === 40) {
-      slack.send(
+      send(
         [
           `Something needs attention at ${APP}`,
           tripleBackTick(JSON.stringify(parsed, null, 2)),
